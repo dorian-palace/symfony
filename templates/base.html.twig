@@ -18,8 +18,8 @@
 
                         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                             <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                            <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                            <li><a href="/article" class="nav-link px-2 text-white">Article</a></li>
+                            <li><a href="/comment" class="nav-link px-2 text-white">Comment</a></li>
                             <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
                             <li><a href="#" class="nav-link px-2 text-white">About</a></li>
                         </ul>
@@ -29,8 +29,8 @@
                         </form>
 
                         <div class="text-end">
-                            <button type="button" class="btn btn-outline-light me-2">Login</button>
-                            <button type="button" class="btn btn-warning">Sign-up</button>
+                            <a href="/login"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+                            <a href="/register"> <button type="button" class="btn btn-warning">Sign-Up</button></a>
                         </div>
                     </div>
                 </div>
@@ -39,6 +39,7 @@
         {% endblock %}
     </head>
     <body>
+
         {% block body %}
             <h1>Hello</h1>
         {% endblock %}
