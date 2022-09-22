@@ -20,9 +20,6 @@ class Article
     #[ORM\Column(type: Types::TEXT)]
     private ?string $content = null;
 
-    #[ORM\Column]
-    private ?int $media_id = null;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -52,15 +49,4 @@ class Article
         return $this;
     }
 
-    public function getMediaId(): ?int
-    {
-        return $this->media_id;
-    }
-
-    public function setMediaId(int $media_id): self
-    {
-        $this->media_id = $media_id;
-
-        return $this;
-    }
 }

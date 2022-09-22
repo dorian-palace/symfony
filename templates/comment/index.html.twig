@@ -8,9 +8,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
-                <th>User_id</th>
-                <th>Article_id</th>
+
                 <th>Content</th>
                 <th>actions</th>
             </tr>
@@ -18,9 +16,7 @@
         <tbody>
         {% for comment in comments %}
             <tr>
-                <td>{{ comment.id }}</td>
-                <td>{{ comment.userId }}</td>
-                <td>{{ comment.articleId }}</td>
+
                 <td>{{ comment.content }}</td>
                 <td>
                     <a href="{{ path('app_comment_show', {'id': comment.id}) }}">show</a>
